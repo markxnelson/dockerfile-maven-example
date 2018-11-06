@@ -3,11 +3,7 @@ box: maven:3.5.4-jdk-11
 build:
   docker: true
   steps:
-    # - script:
-    #   name: Install pre-reqs
-    #   code: |
-    #     apt-get update
-    #     apt-get -y install openjdk-8-jdk
     - wercker/maven:
       goals: verify
       version: 3.5.2
+      cache_repo: true

@@ -1,0 +1,8 @@
+box: ubuntu
+
+build:
+  docker: true
+  steps:
+    - wercker/maven:
+      goals: verify
+      version: 3.5.2

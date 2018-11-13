@@ -7,3 +7,8 @@ build:
       goals: verify
       version: 3.5.2
       cache_repo: true
+    - internal/docker-push:
+      repository: markxnelson/test123
+      tag: latest, abc123, my-branch
+      username: $DOCKER_USERNAME
+      password: $DOCKER_PASSWORD

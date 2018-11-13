@@ -10,6 +10,6 @@ build:
     - internal/docker-push:
       registry: https://iad.ocir.io/v2/
       repository: odx-pipelines/mark/test123
-      tag: latest, abc123, my-branch
+      tag: latest, abc123, my-branch, 181113_101335 
       username: $DOCKER_USERNAME
       password: $DOCKER_PASSWORD

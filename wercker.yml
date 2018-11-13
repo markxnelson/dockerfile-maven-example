@@ -8,8 +8,8 @@ build:
       version: 3.5.2
       cache_repo: true
     - internal/docker-push:
-      registry: hub.docker.com
-      repository: markxnelson/test123
+      registry: https://iad.ocir.io/v2/
+      repository: odx-pipelines/mark/test123
       tag: latest, abc123, my-branch
       username: $DOCKER_USERNAME
       password: $DOCKER_PASSWORD
